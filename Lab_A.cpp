@@ -33,6 +33,7 @@ public:
         if (prev) prev->next = curr->next;
         else head = curr->next;
         delete curr;
+        delete curr;
         count--;
     }
 
@@ -48,7 +49,7 @@ public:
 
     // TODO: Implement destructor, copy constructor, operator=
     // (Part A deliverable)
-    /*
+
     ~NodeList() {
         ListNode* curr = head;
         while (curr) {
