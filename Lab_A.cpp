@@ -33,7 +33,7 @@ public:
         if (prev) prev->next = curr->next;
         else head = curr->next;
         delete curr;
-        delete curr;
+        cout << "Curr id: " << curr->id << endl;
         count--;
     }
 
