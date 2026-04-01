@@ -1,0 +1,11 @@
+Lines of code for smart nodes: 52
+Lines of code for NodeList with new/delete: 78
+
+Comparing safety:
+- Raw pointers have risk of memory leaks if destructor is not implemented correctly, while smart pointers automatically clean up memory.
+- Raw pointers can lead to double deletes if copy constructor and assignment operator are not implemented correctly, while smart pointers prevent this
+- Raw pointers can lead to use after free if not handled
+
+Comparing complexity:
+- Raw pointers require manual implementation of destructor, copy constructor, and assignment operator
+- Smart pointers require no additional code for memory management, reducing complexity and potential for bugs.
