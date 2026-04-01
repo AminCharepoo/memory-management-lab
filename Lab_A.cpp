@@ -58,7 +58,7 @@ public:
         }
     }
 
-    NodeList(const NodeList& other) : count(other.count), head(nullptr) {
+    NodeList(const NodeList& other) : head(nullptr), count(other.count) {
 
         ListNode* src = other.head;
         ListNode** dst = &head;
